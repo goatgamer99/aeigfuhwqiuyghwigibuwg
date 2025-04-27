@@ -14,7 +14,6 @@ local Window = Library:CreateWindow({
 
 getgenv().LegitTab = Window:AddTab('Legit')
 getgenv().SemiLegitTab = Window:AddTab('Semi Legit')
-getgenv().RageTab = Window:AddTab('Rage')
 getgenv().VisualTab = Window:AddTab('Visuals')
 getgenv().ExploitsTab = Window:AddTab('Game Hacks')
 getgenv().MiscTab = Window:AddTab('Misc')
