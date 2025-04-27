@@ -5,9 +5,9 @@ local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))
 local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 
 local Window = Library:CreateWindow({
-    Title = 'snowfall . victim',
+    Title = 'blossom . victim | slotted',
     Center = true,
-    AutoShow = true,
+    AutoShow = false,
     TabPadding = 8,
     MenuFadeTime = 0.4
 })
@@ -26,7 +26,7 @@ MiscellaneousGroup:AddButton("Unload", function()
 end)
 
 MiscellaneousGroup:AddLabel("Menu bind"):AddKeyPicker("MenuKeybind", {
-    Default = "End",
+    Default = "J",
     NoUI = true,
     Text = "Menu keybind"
 })
@@ -40,8 +40,8 @@ ThemeManager:SetLibrary(Library)
 SaveManager:SetLibrary(Library)
 SaveManager:IgnoreThemeSettings()
 SaveManager:SetIgnoreIndexes({ 'MenuKeybind' })
-ThemeManager:SetFolder('snowfall')
-SaveManager:SetFolder('snowfall/dahood')
+ThemeManager:SetFolder('blossom')
+SaveManager:SetFolder('blossom/slotted')
 SaveManager:BuildConfigSection(getgenv().MiscTab)
 ThemeManager:ApplyToTab(getgenv().MiscTab)
 SaveManager:LoadAutoloadConfig()
