@@ -43,3 +43,4 @@ ThemeManager:SetFolder('blossom')
 SaveManager:SetFolder('blossom/slotted')
 SaveManager:BuildConfigSection(getgenv().MiscTab)
 ThemeManager:ApplyToTab(getgenv().MiscTab)
+getgenv().SaveManager = SaveManager
